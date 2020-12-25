@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:text="酷欧日历"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:typeface="monospace"/>
+    <!--1.设置以星期二为每周第一天-->
+    <!--2.设置该组件总共显示四个星期-->
+    <!--3.并对该组件的星期尽心了定制-->
+    <CalendarView
+        android:id="@+id/calenderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:firstDayOfWeek="3"
+        android:shownWeekCount="4"
+        android:selectedWeekBackgroundColor="#aff"
+        android:focusedMonthDateColor="#f00"
+        android:weekSeparatorLineColor="#ff0"
+        android:unfocusedMonthDateColor="#f9f">
+    </CalendarView>
+</LinearLayout>
